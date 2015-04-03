@@ -1,0 +1,51 @@
+update
+sbt build
+help
+run Task1.scala
+help
+clean
+plugins
+tasks
+compile
+ls
+run Test
+run
+run Test
+ run Test
+run Test
+++ 2.11
+run Test
+update
+last *:update
+update
+++ 2.11.2
+update
+run Test
+reload
+scalaVersion
+run Test
+update
+sbt-version
+update
+clean
+reload
+dependency
+dependencyClasspath
+++ 2.11
+run Tets
+++ 2.10
+run Test
+sbt-version
+run
+set logLevel in update := Level.Debug
+update
+last update
+reload
+run Test
+++ 2.10
+tun Test
+run Test
+++ 2.11.2
+run Test
+reload
+run Test
