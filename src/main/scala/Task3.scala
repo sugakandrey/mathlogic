@@ -1,16 +1,25 @@
 /**
-* @author sugak andrey
-*/
+ * @author sugak andrey
+ */
 
-import utils.propositionalCalculus.{ExprParser, ProofMaker => PM}
+import java.io.PrintWriter
+import scala.io.Source.fromFile
+
+import mathlogic.propositionalCalculus.{ExprParser, ProofMaker => PM}
 
 object Task3 {
-  val parser = new ExprParser
+  val parser = ExprParser()
+
   def main(args: Array[String]): Unit = {
-    PM.makeProof(parser.parse("A->C").get) match {
-      case Left(p) => p._2.foreach(println)
-      case Right(err) => println(err)
+    for (i <- 1 to 7) {
+      val out = new PrintWriter(s"src/test/results/HW3/true$i.out")
+      val s = fromFile(s"src/test/resources/HW3/true$i.in").getLines().toArray.head
+      PM.makeProof(parser.parse(s).get) match {
+        case Left(p) => p._2.foreach(out.println); out.close()
+        case Right(err) => println(err)
+      }
     }
   }
 }
+
 

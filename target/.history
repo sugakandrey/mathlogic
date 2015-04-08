@@ -49,3 +49,32 @@ run Test
 run Test
 reload
 run Test
+run
+run Task1
+run-main Task
+run-main Task1
+compile
+run-main Task8 w^2=1+w^2
+run-main Task8 w^2=1+w^w
+compile
+run-main Task8 w^2=1+w^w
+compile
+run-main Task8 w^2=1+w^w
+compile
+run-main Task8
+run-main Task8 w^w^w = w^1
+run-main Task8 w^(w^w) = w^1
+run-main Task8 w^(w+5) = w^1
+run-main Task8 w^w = w^1
+run-main Task8
+run-main Task8 w^1 = w^2
+compile
+run-main Task8 w^1 = w^2
+compile
+run-main Task8 w^1 = w^2
+run-main Task8 w^1=w^2
+compile
+run-main Task8 w^(w^2)=w^2
+run-main Task8 w^(w^w)=w^2
+q
+exit
